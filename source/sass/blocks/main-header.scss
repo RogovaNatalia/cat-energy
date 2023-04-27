@@ -1,0 +1,47 @@
+@use "../global/variables.scss";
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+}
+  .main-header__logo-img {
+  margin-left: 20px;
+}
+
+.main-header__logo-text {
+  margin-left: 57px;
+}
+
+
+.main-header__button-on{
+border: 0;
+width: 24px;
+height: 16px;
+padding: 0;
+top: 24px;
+right: 20px;
+position: absolute;
+cursor: pointer;
+background-color: transparent;
+}
+
+.main-header__button-off{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: 1;
+  top: 24px;
+right: 20px;
+  cursor: pointer;
+background-color: transparent;
+}
+
+.main-header__nav {
+  width: 100%;
+}

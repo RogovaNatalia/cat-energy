@@ -1,0 +1,70 @@
+@use "../mixins/title.scss";
+@use "../mixins/description.scss";
+
+.example {
+  background-color: #EAEAEA;
+}
+
+.example__title {
+  @include title.title-big();
+  padding: 25px 20px 40px 20px;
+  margin: 0;
+}
+
+.example__description {
+  @include description.description();
+  margin: 0;
+  padding: 0 20px 20px 20px;
+}
+
+.example__wraper {
+  margin: 0 auto;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.example__item {
+  width: 124px;
+  box-sizing: border-box;
+  height: 56px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+}
+
+.example__desc{
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: black;
+  padding: 14px 0 7px;
+}
+
+.example__text {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  color: #444444;
+  display: inline-block;
+  padding: 0 9px;
+  width: 84px;
+  background-color: #eaeaea;
+}
+
+.example__aside {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.example__picture {
+  padding-bottom: 40px;
+}

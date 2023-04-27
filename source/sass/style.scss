@@ -1,1 +1,18 @@
 // Начните писать стили здесь
+@use "./global/variables.scss";
+@use "./global/fonts.scss";
+@use "./global/visually-hidden.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/main-menu.scss";
+@use "./blocks/page__body.scss";
+@use "./blocks/content.scss";
+@use "./blocks/card-content.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/example.scss";
+@use "./blocks/page-footer.scss";
+@use "./mixins/title.scss";
+@use "./mixins/description.scss";
+@use "./mixins/link.scss";
+

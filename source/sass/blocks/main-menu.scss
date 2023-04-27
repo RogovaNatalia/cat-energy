@@ -1,0 +1,26 @@
+@use "../mixins/link.scss";
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main-menu__link {
+  @include link.link-title();
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-decoration: none;
+}
+
+.main-menu__item {
+  border-top: 1px solid #E6E6E6;
+  text-align: center;
+  width: 100%;
+}
+.main-menu__item:last-child {
+  border-bottom: 1px solid #E6E6E6;
+}
+

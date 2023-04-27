@@ -1,0 +1,37 @@
+@use "../mixins/title.scss";
+@use "../mixins/description.scss";
+@use "../mixins/link.scss";
+
+.card-content {
+  display: grid;
+  grid-template-columns: 30% auto;
+  align-items: center;
+}
+
+.card-content__title {
+  @include title.title();
+  grid-column: 2 / 3;
+}
+
+.card-content__icon {
+  grid-row: 1/2;
+}
+
+.card-content__description {
+  @include description.description();
+  grid-column: 1/3;
+  margin: 22px 33px 23px 20px;
+}
+
+.card-content__link {
+  @include link.link-button();
+  grid-column: 1/3;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 19px;
+  margin-bottom: 22px;
+}
+
+.card-content__arrow {
+  margin-left: 15px;
+}
