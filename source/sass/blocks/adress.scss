@@ -1,0 +1,25 @@
+@use "../mixins/title.scss";
+@use "../mixins/description.scss";
+
+.address__location{
+  width: 100%;
+}
+.address__wrapper{
+  display: flex;
+  margin: 26px 20px;
+}
+.address__title {
+  @include title.title();
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+
+}
+.address__description{
+  @include description.description();
+  line-height: 18px;
+  margin: 0;
+padding: 0;
+}
+

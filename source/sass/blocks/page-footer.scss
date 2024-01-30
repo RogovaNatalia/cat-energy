@@ -1,3 +1,11 @@
-.page-footer {
+.page-footer__container {
+background-color: #F2F2F2;
+padding: 40px 20px;
 
+}
+
+.page-footer__wrapper{
+gap: 20px;
+display: grid;
+text-align: center;
 }

@@ -1,13 +1,12 @@
-let navHeader = document.querySelector('.main-header__content');
-let navMain = document.querySelector('.main-header__nav');
-let navToggleShow = document.querySelector('.main-header__content-toggle');
-let navToggleHide = document.querySelector('.main-header__close');
+const openMenuBtn = document.getElementById('openMenuBtn');
+const closeMenuBtn = document.getElementById('closeMenuBtn');
+const menu = document.querySelector('.nav-toggle__menu');
 
-navHeader.classList.remove('main-header--js-disabled');
+openMenuBtn.addEventListener('click', function () {
+  menu.classList.add('nav-toggle--open');
+});
 
-navToggleShow.addEventListener('click', function () {
-  navMain.classList.add('main-header__nav--opened');
+closeMenuBtn.addEventListener('click', function () {
+  menu.classList.remove('nav-toggle--open');
 });
-navToggleHide.addEventListener('click', function () {
-  navMain.classList.remove('main-header__nav--opened');
-});
+
