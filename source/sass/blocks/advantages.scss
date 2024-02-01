@@ -2,7 +2,7 @@
 @use "../mixins/description.scss";
 
 .advantages {
-  margin: 20px 23px 49px 20px;
+ margin-bottom: 49px;
 }
 
 // .advantages__wrapper {
@@ -12,7 +12,7 @@
 .advantages__title {
   @include title.title-big();
   margin: 0;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .advantages__list {

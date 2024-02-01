@@ -1,11 +1,15 @@
 .page-footer__container {
 background-color: #F2F2F2;
-padding: 40px 20px;
-
 }
 
 .page-footer__wrapper{
-gap: 20px;
-display: grid;
-text-align: center;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+.page-footer__wrapper-logo {
+  align-self: center;
+
 }

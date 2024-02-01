@@ -1,0 +1,24 @@
+.toggleable {}
+.toggleable--shown {}
+
+.toggleable__button {}
+.toggleable__button--show {
+  display: block;
+}
+.toggleable__button--hide {
+  display: none;
+}
+
+.toggleable--shown .toggleable__button--show {
+  display: none;
+}
+.toggleable--shown .toggleable__button--hide {
+  display: block;
+}
+
+.toggleable__content {
+  display: none;
+}
+.toggleable--shown .toggleable__content {
+  display: block;
+}

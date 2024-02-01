@@ -1,12 +1,13 @@
-const openMenuBtn = document.getElementById('openMenuBtn');
-const closeMenuBtn = document.getElementById('closeMenuBtn');
-const menu = document.querySelector('.nav-toggle__menu');
+document.querySelectorAll('.toggleable').forEach((parent) => {
+  const showButton = parent.querySelector('.toggleable__button--show');
+  const hideButton = parent.querySelector('.toggleable__button--hide');
+  const content = parent.querySelector('.toggleable__content');
 
-openMenuBtn.addEventListener('click', function () {
-  menu.classList.add('nav-toggle--open');
+  showButton.addEventListener('click', function () {
+    parent.classList.add('toggleable--shown');
+  });
+
+  hideButton.addEventListener('click', function () {
+    parent.classList.remove('toggleable--shown');
+  });
 });
-
-closeMenuBtn.addEventListener('click', function () {
-  menu.classList.remove('nav-toggle--open');
-});
-

@@ -1,0 +1,12 @@
+
+@use "../mixins/description.scss";
+
+.copyright {
+
+}
+
+.copyright__text {
+  @include description.description();
+  font-size: 16px;
+  margin: 0;
+}

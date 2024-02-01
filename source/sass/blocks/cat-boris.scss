@@ -1,0 +1,25 @@
+.cat-boris {
+  // position: relative;
+  width: 100%;
+}
+
+.cat-boris__wrapper{
+  padding-bottom: 40px;
+  display: inline-block;
+}
+
+.cat-boris__button{
+  // content: "";
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 50%;
+  // justify-content: center;
+  // align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
