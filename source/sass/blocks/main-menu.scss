@@ -1,9 +1,14 @@
 @use "../mixins/link.scss";
+@use "../global/media.scss";
 
 .main-menu {
   margin: 0;
   padding: 0;
   width: 100%;
+
+  @include media.for-tablet {
+    display: flex
+  }
 }
 
 .main-menu__link {
@@ -13,15 +18,38 @@
   padding-top: 22px;
   padding-bottom: 24px;
   text-decoration: none;
+
+  @include media.for-tablet {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-top: 18px;
+    padding-bottom: 8px;
+
+  &--current {
+    border-bottom: 2px solid #68B738;
+  }
+  }
+
 }
 
 .main-menu__item {
   border-top: 1px solid #E6E6E6;
   text-align: center;
-  // width: 100%;
   margin: 0 -20px 0 -20px;
+
+  @include media.for-tablet {
+    border: none;
+    margin: 0;
+    margin-right: 30px;
+  }
 }
+
 .main-menu__item:last-child {
   border-bottom: 1px solid #E6E6E6;
+
+  @include media.for-tablet {
+    border: none;
+  }
 }
 

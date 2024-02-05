@@ -1,9 +1,19 @@
+@use "../global/media.scss";
+
 .content {
   margin-bottom: 20px;
+
+  @include media.for-tablet {
+  margin-bottom: 45px;
+  }
 
 }
 
 .content__item {
   background-color: #F2F2F2;
   margin-bottom: 20px;
+
+  @include media.for-tablet {
+    margin-bottom: 30px;
+  }
 }

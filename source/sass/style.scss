@@ -2,9 +2,12 @@
 @use "./mixins/title.scss";
 @use "./mixins/description.scss";
 @use "./mixins/link.scss";
+
 @use "./global/variables.scss";
 @use "./global/fonts.scss";
 @use "./global/visually-hidden.scss";
+@use "./global/media.scss";
+
 @use "./blocks/container.scss";
 @use "./blocks/toggleable.scss";
 @use "./blocks/main-header.scss";

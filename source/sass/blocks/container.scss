@@ -1,4 +1,11 @@
+@use "../global/media.scss";
+
 .container {
   margin-left: 20px;
   margin-right: 20px;
+
+  @include media.for-tablet {
+    margin-left: 31px;
+    margin-right: 30px;
+  }
 }

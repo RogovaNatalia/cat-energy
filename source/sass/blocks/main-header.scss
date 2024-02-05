@@ -1,27 +1,57 @@
 @use "../global/variables.scss";
+@use "../global/media.scss";
 
 .main-header {
   z-index: 1;
   position: relative;
+
+  @include media.for-tablet {
+
+  }
+
+  @include media.for-desktop {
+
+  }
 }
 
 
+
 .main-header__logo-img {
-  width: 65px;
-  height: 65px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include media.for-mobile {
+    background-image: url("../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 65px;
+    height: 65px;
+  }
+
+  @include media.for-tablet {
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+    width: 174px;
+    height: 52px;
+    margin-left: 31px;
+  }
 }
 
 
 .main-header__logo-text {
-
+  @include media.for-tablet {
+    display: none;
+  }
 }
 
 .main-header__button {
   width: 65px;
   height: 65px;
+  @include media.for-tablet {
+display: none;
+  }
 }
 
 
@@ -29,6 +59,11 @@
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+@include media.for-tablet {
+
+  }
+
 }
 
 .main-header__button-on{
@@ -54,8 +89,15 @@ align-items: center;
 }
 
 .main-header__nav {
+  background: #FFF;
+
+  @include media.for-mobile {
   width: 100%;
   position: absolute;
   top: 65px;
-  background: #FFF;
+  }
+
+  @include media.for-tablet {
+  display: flex;
+  }
 }

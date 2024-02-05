@@ -1,4 +1,5 @@
 @use "../global/variables.scss";
+@use "../global/media.scss";
 
 .main-nav {
   position: relative;
@@ -9,6 +10,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+
 }
 
 
