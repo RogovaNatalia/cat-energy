@@ -1,5 +1,6 @@
 @use "../mixins/title.scss";
 @use "../mixins/description.scss";
+@use "../global/media.scss";
 
 .address__location {
   display: block;
@@ -10,6 +11,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 26px 0;
+
+  @include media.for-tablet {
+    margin: 60px 40px 56px;
+  }
 }
 
 .address__title {
@@ -18,13 +23,26 @@
   line-height: 20px;
   margin: 0;
   padding: 0;
+
+  @include media.for-tablet {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 170px;
+  }
 }
 
 .address__description{
   @include description.description();
-  line-height: 20px;
-  margin: 0;
-  padding: 0;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+
+  @include media.for-tablet {
+    font-size: 16px;
+    max-width: 160px;
+    text-align: right;
+    justify-self: end;
+  }
 }
 
 .address__map{

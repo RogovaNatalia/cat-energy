@@ -156,11 +156,11 @@
       <section class="promo">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <picture class="promo__image">
+          <!-- <picture class="promo__image">
             <source srcset="" media="(min-width: 1440px)">
             <source srcset="img/food-image_tablet.png, img/food-image_tablet_2x.png 2x" media="(min-width: 768px)">
             <img src="img/food-image.png" alt="Корм для кошек" aria-hidden="true" >
-          </picture>
+          </picture> -->
           <a class="promo__button button" href="form.html">подобрать программу</a>
       </section>
 
@@ -225,27 +225,31 @@
 
           <div class="advantages__wraper">
             <ul class="advantages__list">
-              <li class="advantages__item advantages__item--leaf">
+              <li class="advantages__item">
+                <span class="advantages__item-rect advantages__item-rect--leaf"></span>
                 <p class="advantages__description">
                   Функциональное питание содержит только полезные питательные вещества.
                 </p>
               </li>
 
-              <li class="advantages__item advantages__item--powder">
+              <li class="advantages__item">
+                <span class="advantages__item-rect advantages__item-rect--powder"></span>
                 <p class="advantages__description">
                   Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
                 </p>
               </li>
 
-              <li class="advantages__item advantages__item--food">
+              <li class="advantages__item">
+                <span class="advantages__item-rect advantages__item-rect--food"></span>
                 <p class="advantages__description">
                   Замените один-два приема обычной еды на наше функциональное питание.
                 </p>
               </li>
 
-              <li class="advantages__item advantages__item--time">
+              <li class="advantages__item">
+                <span class="advantages__item-rect advantages__item-rect--time"></span>
                 <p class="advantages__description">
-                  Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+                  Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
                 </p>
               </li>
             </ul>
@@ -273,23 +277,22 @@
               <span class="example__desc"> 60 ДНЕЙ </span>
               <span class="example__text"> затрачено времени </span>
             </div>
-          </div>
 
-          <div class="example__aside">
-            <span class="example__aside-item"> Затраты на питание: </span>
 
-            <span class="example__aside-item"> 15 000 РУБ. </span>
+            <div class="example__aside">
+              <span class="example__aside-item"> Затраты на питание: </span>
+
+              <span class="example__aside-item"> 15 000 РУБ. </span>
+            </div>
           </div>
 
           <div class="example__picture">
             <div class="cat-boris__wrapper">
-              <img
-                class="cat-boris"
-                src="./img/cat-slider-mobile.png"
-                alt="Кот Борис, до и после."
-                width="280"
-                height="256"
-              />
+
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/cat-slider-tablet.png">
+                <img class="cat-boris" src="../img/cat-slider-mobile.png" srcset="../img/cat-slider-mobile.png" alt="Как кот выглядит до.">
+              </picture>
             </div>
             <button class="cat-boris__button" type="button">
               <span class="visually-hidden">До и после</span>

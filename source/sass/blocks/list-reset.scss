@@ -1,8 +1,12 @@
+@use "../global/media.scss";
+
 .list-reset {
  list-style: none;
  margin: 0;
  padding: 0;
  width: 100%;
+
+ @include media.for-mobile {
 
 &::after {
   content: "";
@@ -19,4 +23,5 @@
   width: 100%;
   margin-bottom: 20px;
   }
+}
 }

@@ -1,15 +1,29 @@
+@use "../global/media.scss";
+
 .page-footer__container {
 background-color: #F2F2F2;
 }
 
 .page-footer__wrapper{
-  gap: 20px;
+
   display: flex;
-  flex-direction: column;
-  padding: 40px 0;
+
+  @include media.for-mobile {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0;
+    }
+
+  @include media.for-tablet {
+    padding: 55px 0;
+    }
 }
 
 .page-footer__wrapper-logo {
   align-self: center;
 
+  @include media.for-tablet {
+  width: 167px;
+  height: 37px;
+  }
 }
