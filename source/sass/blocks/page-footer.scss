@@ -16,14 +16,22 @@ background-color: #F2F2F2;
 
   @include media.for-tablet {
     padding: 55px 0;
+    justify-content: space-between;
     }
 }
-
-.page-footer__wrapper-logo {
+.page-footer__wrapper-logo{
   align-self: center;
 
   @include media.for-tablet {
-  width: 167px;
-  height: 37px;
+    width: 168px;
+ }
+}
+
+.page-footer__wrapper-logo__img{
+  align-self: center;
+
+  @include media.for-tablet {
+    width: 142px;
+    height: 26px;
   }
 }

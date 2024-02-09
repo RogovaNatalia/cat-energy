@@ -24,7 +24,7 @@
 .example__title {
   @include title.title-big();
   margin: 0;
-  padding: 20px 0 40px;
+  padding: 25px 0 40px;
 
   @include media.for-tablet {
     line-height: 60px;
@@ -76,7 +76,7 @@
 
   @include media.for-tablet {
     width: 162px;
-    height: 77px;
+    height: 72px;
   }
 
 }
@@ -93,7 +93,7 @@
   @include media.for-tablet {
     font-size: 30px;
     line-height: 37px;
-    margin: 15px 0 11px;
+    margin: 15px 0 9px;
   }
 }
 
@@ -104,17 +104,18 @@
   margin: 0 auto;
   color: #444444;
   display: inline-block;
-  padding: 0 9px;
-  width: 84px;
   background-color: #eaeaea;
-  width: 60px;
+
+  @include media.for-mobile {
+    padding: 0 5px;
+    width: 82px;
+  }
 
   @include media.for-tablet {
     font-size: 14px;
     line-height: 14px;
     background-color: #fff;
-    width: 125px;
-    padding: 0;
+    padding: 0 7px;
   }
 }
 
@@ -140,7 +141,8 @@
 
 .example__aside-item {
   @include media.for-tablet {
-
+    display: block;
+    margin-bottom: 9px;
   }
 }
 

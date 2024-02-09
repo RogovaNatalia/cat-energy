@@ -4,9 +4,10 @@
  list-style: none;
  margin: 0;
  padding: 0;
- width: 100%;
+
 
  @include media.for-mobile {
+  width: 100%;
 
 &::after {
   content: "";

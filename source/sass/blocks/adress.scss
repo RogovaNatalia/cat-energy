@@ -5,6 +5,10 @@
 .address__location {
   display: block;
   width: 100%;
+
+  @include media.for-tablet {
+    height: 400px;
+  }
 }
 
 .address__wrapper {
@@ -42,6 +46,14 @@
     max-width: 160px;
     text-align: right;
     justify-self: end;
+  }
+}
+
+.address__city {
+
+  @include media.for-tablet {
+    display: block;
+    margin-top: 20px;
   }
 }
 

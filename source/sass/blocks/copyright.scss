@@ -1,12 +1,13 @@
-
-@use "../mixins/description.scss";
+@use "../global/media.scss";
 
 .copyright {
-
+  @include media.for-tablet {
+     width: 168px;
+  }
 }
 
-.copyright__text {
-  @include description.description();
-  font-size: 16px;
-  margin: 0;
+.copyright__logo-text {
+  @include media.for-tablet {
+
+  }
 }
