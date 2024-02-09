@@ -6,18 +6,21 @@
   padding: 0;
   width: 100%;
 
-  @include media.for-tablet {
-    display: flex
+  @include media.for-tablet_and_above {
+    display: flex;
+  }
+  @include media.for-desktop {
+    gap:36px;
   }
 }
 
 .main-menu__link {
   @include link.link-title();
-  position: relative;
-  display: block;
-  padding-top: 22px;
-  padding-bottom: 24px;
-  text-decoration: none;
+    position: relative;
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    text-decoration: none;
 
   @include media.for-tablet {
     font-size: 18px;
@@ -28,7 +31,21 @@
 
   &--current {
     border-bottom: 2px solid #68B738;
+    }
   }
+
+  @include media.for-desktop {
+    z-index: 2;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 11px;
+    padding-bottom: 7px;
+
+  &--current {
+    border-bottom: 2px solid #fff;
+    }
   }
 
 }
@@ -36,19 +53,31 @@
 .main-menu__item {
   border-top: 1px solid #E6E6E6;
   text-align: center;
-  margin: 0 -20px 0 -20px;
 
-  @include media.for-tablet {
+  @include media.for-mobile{
+    margin: 0 -20px 0 -20px;
+  }
+
+
+  @include media.for-tablet{
     border: none;
-    margin: 0;
     margin-right: 30px;
   }
+
+  @include media.for-desktop {
+    border: none;
+    width: auto;
+
+    .main-menu__item:not(:last-child){
+    margin-right: 36px;
+  }
+}
 }
 
 .main-menu__item:last-child {
   border-bottom: 1px solid #E6E6E6;
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
     border: none;
   }
 }

@@ -19,8 +19,8 @@
   }
 }
 
-// @mixin for-tablet_and_above {
-//   @media (min-width: variables.$tablet_-width) {
-//     @content;
-//   }
-// }
+@mixin for-tablet_and_above {
+  @media (min-width: variables.$tablet-width) {
+    @content;
+  }
+}

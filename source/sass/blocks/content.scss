@@ -7,11 +7,25 @@
   margin-bottom: 45px;
   }
 
+  @include media.for-desktop {
+    margin-bottom: 71px;
+    }
+}
+
+.content__container{
+  @include media.for-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .content__item {
   background-color: #F2F2F2;
-  margin-bottom: 20px;
+
+  @include media.for-mobile {
+    margin-bottom: 20px;
+  }
 
   @include media.for-tablet {
     margin-bottom: 30px;

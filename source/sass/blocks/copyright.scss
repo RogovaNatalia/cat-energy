@@ -1,13 +1,7 @@
 @use "../global/media.scss";
 
 .copyright {
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
      width: 168px;
-  }
-}
-
-.copyright__logo-text {
-  @include media.for-tablet {
-
   }
 }

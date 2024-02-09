@@ -12,6 +12,10 @@
   @include media.for-tablet {
     padding-bottom: 100px;
     }
+
+    @include media.for-desktop {
+      padding-bottom: 85px;
+      }
 }
 
 .cat-boris__button{

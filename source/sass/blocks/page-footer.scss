@@ -1,7 +1,7 @@
 @use "../global/media.scss";
 
 .page-footer__container {
-background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 .page-footer__wrapper{
@@ -12,17 +12,23 @@ background-color: #F2F2F2;
     flex-direction: column;
     gap: 20px;
     padding: 40px 0;
-    }
+  }
 
   @include media.for-tablet {
     padding: 55px 0;
     justify-content: space-between;
-    }
+  }
+
+  @include media.for-desktop {
+    padding: 66px 0;
+    justify-content: space-between;
+  }
 }
+
 .page-footer__wrapper-logo{
   align-self: center;
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
     width: 168px;
  }
 }

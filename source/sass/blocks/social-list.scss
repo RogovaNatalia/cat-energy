@@ -5,7 +5,7 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
   align-self: center;
 }
 

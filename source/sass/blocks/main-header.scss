@@ -5,12 +5,8 @@
   z-index: 1;
   position: relative;
 
-  @include media.for-tablet {
-
-  }
-
   @include media.for-desktop {
-
+    padding-right: 110px;
   }
 }
 
@@ -37,11 +33,19 @@
     height: 52px;
     margin-left: 31px;
   }
+
+  @include media.for-desktop {
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    width: 202px;
+    height: 59px;
+    margin-left: 110px;
+  }
 }
 
 
 .main-header__logo-text {
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
     display: none;
   }
 }
@@ -49,8 +53,9 @@
 .main-header__button {
   width: 65px;
   height: 65px;
-  @include media.for-tablet {
-display: none;
+
+  @include media.for-tablet_and_above {
+  display: none;
   }
 }
 
@@ -60,8 +65,8 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
-@include media.for-tablet {
-
+@include media.for-desktop {
+  margin-top: 53px;
   }
 
 }
@@ -97,7 +102,8 @@ align-items: center;
   top: 65px;
   }
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
   display: flex;
+  background-color: transparent;
   }
 }
