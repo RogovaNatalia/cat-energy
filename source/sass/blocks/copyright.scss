@@ -1,7 +1,14 @@
 @use "../global/media.scss";
 
 .copyright {
+  display: flex;
+  justify-content: space-between;
+
   @include media.for-tablet_and_above {
      width: 168px;
   }
+}
+
+.copyright__logo-text {
+  align-self: center;
 }

@@ -16,7 +16,7 @@
     content: "";
     position: absolute;
     top: 24px;
-    left: 0px;
+    left: 3px;
     width: 50px;
     height: 50px;
     background-color: #68B738;
@@ -40,7 +40,7 @@
     content: "";
     position: absolute;
     top: 35px;
-    left: -9px;
+    left: -6px;
     width: 67px;
     height: 28px;
     background-image: url("../img/cat-pro.svg");
@@ -83,7 +83,7 @@
       content: "";
       position: absolute;
       top: 135px;
-      right: -30px;
+      right: -35px;
       width: 268px;
       height: 112px;
       background-image: url("../img/cat-pro.svg");
@@ -190,14 +190,14 @@
 
   @include media.for-desktop {
     @include description.description-medium();
-    margin-top: 39px;
+    margin-top: 48px;
   }
 }
 
 .card-content__link {
   @include link.link-button();
   text-decoration: none;
-  margin-top: 19px;
+  margin-top: 17px;
   margin-bottom: 22px;
 
   @include media.for-tablet {
@@ -205,22 +205,22 @@
     font-size: 20px;
     grid-column: 1/2;
     grid-row: 3/4;
-    margin-top: 52px;
-    margin-bottom: 57px;
+    margin-top: 59px;
+    margin-bottom: 62px;
   }
 
   @include media.for-desktop {
     font-weight: 400;
     font-size: 20px;
-    margin-top: 27px;
-    margin-bottom: 59px;
+    margin-top: 34px;
+    margin-bottom: 64px;
   }
 }
 
 .card-content__arrow {
-  margin-left: 15px;
+  margin-left: 13px;
 
-  @include media.for-tablet {
-    margin-left: 25px;
+  @include media.for-tablet_and_above {
+    margin-left: 22px;
   }
 }

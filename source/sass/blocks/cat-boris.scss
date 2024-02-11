@@ -1,7 +1,6 @@
 @use "../global/media.scss";
 
-.cat-boris {
-  // position: relative;
+.cat-boris__img {
   width: 100%;
 }
 
@@ -10,21 +9,18 @@
   display: inline-block;
 
   @include media.for-tablet {
-    padding-bottom: 100px;
-    }
+    padding-bottom: 96px;
+  }
 
-    @include media.for-desktop {
+  @include media.for-desktop {
       padding-bottom: 85px;
-      }
+  }
 }
 
 .cat-boris__button{
-  // content: "";
   position: absolute;
   top: calc(50% - 20px);
   left: 50%;
-  // justify-content: center;
-  // align-items: center;
   width: 40px;
   height: 40px;
   background-color: transparent;

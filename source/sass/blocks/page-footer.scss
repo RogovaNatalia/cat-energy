@@ -36,7 +36,7 @@
 .page-footer__wrapper-logo__img{
   align-self: center;
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
     width: 142px;
     height: 26px;
   }
