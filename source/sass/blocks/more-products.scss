@@ -1,0 +1,26 @@
+@use "../mixins/title.scss";
+@use "../global/media.scss";
+
+.more-products{
+  margin-top: 25px;
+}
+
+.more-products__title{
+  @include title.title();
+  line-height: 24px;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px;
+
+}
+
+.more-products__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.more-products__item {
+
+}

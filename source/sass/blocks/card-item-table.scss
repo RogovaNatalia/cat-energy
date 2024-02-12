@@ -1,0 +1,26 @@
+@use "../global/media.scss";
+
+.card-item-table{
+  min-width: 140px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444;
+}
+
+.card-item-table__column {
+
+}
+
+.card-item-table__name {
+  margin: 0;
+  padding: 0;
+}
+
+.card-item-table__desc {
+  text-align: end;
+  margin: 0;
+  padding: 0;
+}

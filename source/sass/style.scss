@@ -7,6 +7,7 @@
 @use "./global/fonts.scss";
 @use "./global/visually-hidden.scss";
 @use "./global/media.scss";
+@use "./global/button.scss";
 
 @use "./blocks/container.scss";
 @use "./blocks/toggleable.scss";
@@ -26,3 +27,14 @@
 @use  "./blocks/copyright.scss";
 @use  "./blocks/footer.scss";
 @use "./blocks/cat-boris.scss";
+
+@use "./blocks/catalog.scss";
+@use "./blocks/card-list.scss";
+@use "./blocks/card-item.scss";
+@use "./blocks/last-card.scss";
+@use "./blocks/card-item-table.scss";
+@use "./blocks/more-products.scss";
+@use "./blocks/more-products-card.scss";
+@use "./blocks/more-products-card-table.scss";
+@use "./blocks/action.scss";
+

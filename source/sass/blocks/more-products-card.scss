@@ -1,0 +1,35 @@
+@use "../mixins/title.scss";
+@use "../global/media.scss";
+
+.more-products-card {
+// margin: 13px 0 0;
+
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.more-products-card__title {
+  @include title.title();
+  font-size: 16px;
+  line-height: 16px;
+  margin: 13px 0;
+  padding: 0;
+
+}
+
+.more-products-card__info {
+  padding: 0;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.more-products-card__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+  margin-bottom: 19px;
+
+}

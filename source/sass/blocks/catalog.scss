@@ -1,0 +1,40 @@
+@use "../mixins/title.scss";
+@use "../global/media.scss";
+
+.catalog {
+  margin: 27px 0 25px;
+
+  @include media.for-mobile {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &::before {
+      top: -27px;
+    }
+  }
+}
+
+.catalog__title {
+  @include title.title-medium();
+  margin: 0;
+  padding: 0;
+  margin-bottom: 41px;
+
+  @include media.for-tablet {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @include media.for-desktop {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

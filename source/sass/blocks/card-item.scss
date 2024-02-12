@@ -1,0 +1,58 @@
+@use "../mixins/title.scss";
+@use "../global/media.scss";
+
+.card-item {
+  padding: 19px 0 25px ;
+
+  @include media.for-mobile {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &::before {
+      top: 0;
+    }
+  }
+}
+.card-item__info-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.card-item__title {
+  @include title.title();
+  font-size: 16px;
+  line-height: 20px;
+  color: #222;
+  max-width: 76px;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.card-item__image {
+  margin: auto;
+  display: block;
+
+  &--small {
+    margin-right: 36px;
+  }
+
+  &--big {
+    margin-right: 28px;
+  }
+}
+
+.card-item__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 11px 26px;
+  // min-width: 100px;
+}
