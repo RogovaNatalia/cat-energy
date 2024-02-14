@@ -9,6 +9,11 @@
   font-size: 14px;
   line-height: 14px;
   color: #444;
+
+  @include media.for-tablet  {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 
@@ -20,6 +25,10 @@
   line-height: 20px;
   color: #444;
 
+  @include media.for-tablet  {
+    text-align: end;
+  }
+
 }
 
 .more-products-card-table__info-price {
@@ -30,5 +39,10 @@
   line-height: 14px;
   color: #444;
   text-align: end;
+
+  @include media.for-tablet  {
+    width: 94px;
+    padding: 0;
+  }
 
 }

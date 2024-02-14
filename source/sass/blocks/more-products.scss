@@ -3,6 +3,10 @@
 
 .more-products{
   margin-top: 25px;
+
+  @include media.for-tablet  {
+    margin-top: 68px;
+  }
 }
 
 .more-products__title{
@@ -13,6 +17,11 @@
   padding: 0;
   margin-bottom: 36px;
 
+  @include media.for-tablet  {
+    @include title.title-medium();
+    margin-bottom: 80px;
+  }
+
 }
 
 .more-products__list{
@@ -22,5 +31,7 @@
 }
 
 .more-products__item {
-
+  @include media.for-tablet  {
+    padding: 0 38px;
+  }
 }

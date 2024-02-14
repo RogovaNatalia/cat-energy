@@ -2,9 +2,9 @@
 @use "../global/media.scss";
 
 .catalog {
-  margin: 27px 0 25px;
 
   @include media.for-mobile {
+    margin: 27px 0 25px;
     position: relative;
 
     &::before {
@@ -20,6 +20,9 @@
       top: -27px;
     }
   }
+  @include media.for-tablet {
+    margin: 64px 0 68px;
+  }
 }
 
 .catalog__title {
@@ -31,6 +34,7 @@
   @include media.for-tablet {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 82px;
   }
 
   @include media.for-desktop {

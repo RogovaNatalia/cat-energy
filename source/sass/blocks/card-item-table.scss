@@ -8,11 +8,33 @@
   font-size: 12px;
   line-height: 16px;
   color: #444;
+
+  @include media.for-tablet {
+    font-size: 16px;
+    min-width: 252px;
+  }
 }
 
 .card-item-table__column {
 
+  @include media.for-tablet  {
+
+    position: relative;
+    // padding-top: 7px;
+    // padding-bottom: 9px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: #cdcdcd;
+    }
+  }
 }
+
 
 .card-item-table__name {
   margin: 0;

@@ -1,5 +1,14 @@
+@use "../global/media.scss";
+
 .card-list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include media.for-tablet {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    column-gap: 60px;
+    row-gap: 141px;
+  }
 }
