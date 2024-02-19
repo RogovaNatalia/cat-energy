@@ -18,6 +18,12 @@
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
+
+
+  @include media.for-desktop  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .more-products-card__title {
@@ -30,7 +36,14 @@
   @include media.for-tablet  {
     font-size: 20px;
     line-height: 20px;
-    margin: 26px 0 25px;
+    margin: 26px 0 26px;
+  }
+
+  @include media.for-desktop  {
+
+    font-size: 20px;
+    line-height: 20px;
+    margin: 25px 0 27px;
   }
 
 }
@@ -38,10 +51,10 @@
 .more-products-card__info {
   padding: 0;
   width: 100%;
-  // margin-bottom: 15px;
+  margin-bottom: 15px;
 
   @include media.for-tablet  {
-
+  margin-bottom: 0px;
   }
 
 }
@@ -50,11 +63,13 @@
   font-size: 16px;
   line-height: 20px;
   padding: 10px 0;
-  margin-bottom: 19px;
+  // margin-bottom: 25px;
 
   @include media.for-tablet  {
     grid-column: 1/-1;
   }
-
+  @include media.for-desktop  {
+    margin: 15px 0 17px;
+  }
 
 }

@@ -2,7 +2,7 @@
 @use "../global/media.scss";
 
 .card-item {
-  padding: 19px 0 25px ;
+    padding: 19px 0 25px ;
 
   @include media.for-mobile {
     position: relative;
@@ -13,6 +13,7 @@
       right: -20px;
       height: 1px;
       background-color: #ebebeb;
+      // padding: 19px 0 25px ;
     }
 
     &::before {
@@ -21,12 +22,49 @@
   }
 
   @include media.for-tablet {
-    background-color: #F2F2F2;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: 162px;
     position: relative;
+    // height: 430px;
+    padding:0 37px 39px 39px;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      display: block;
+      left: 0px;
+      right: 0px;
+      bottom: 0;
+      top: 71px;
+      background-color: #F2F2F2;
+      position: absolute;
+      z-index: -1;
+    }
+
+
+  }
+
+  @include media.for-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    padding:0 38px 40px 39px;
+
+    &::before {
+      content: "";
+      display: block;
+      left: 0px;
+      right: 0px;
+      bottom: 0;
+      top: 80px;
+      background-color: #F2F2F2;
+      position: absolute;
+      z-index: -1;
+    }
   }
 }
 
@@ -35,16 +73,17 @@
   flex-direction: row-reverse;
   align-items: center;
   margin-bottom: 13px;
-  // justify-content: center;
+  justify-content: stretch;
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
     display: flex;
     flex-direction: column-reverse;
+    // margin-bottom: 33px;
+    margin-bottom: 0;
   }
 }
 
 .card-item__info {
-
 
   @include media.for-tablet {
 
@@ -60,43 +99,51 @@
   margin: 0;
   margin-bottom: 14px;
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
     font-size: 20px;
     line-height: 24px;
     max-width: 150px;
     text-align: center;
-    margin: 0 auto 21px;
+    margin: 0 auto 13px;
   }
 }
 
-.card-item__image {
+.card-item__image{
   margin: auto;
   display: block;
+  flex-grow: 1;
 
-  &--small {
-    margin-right: 36px;
-  }
-
-  &--big {
-    margin-right: 28px;
-  }
-
-  @include media.for-tablet {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 215px;
+  @include media.for-tablet{
+    // margin-bottom: 34px;
+    // position: absolute;
+    // left: 50%;
+    // transform: translate(-50%);
+    // bottom: 215px;
 
     &--small {
-      width: 161px;
-      height: 172px;
-      margin-right: 0;
+      // width: 161px;
+      // height: 172px;
+      // margin-right: 0;
+      margin-bottom: 34px;
     }
 
     &--big {
-      width: 168px;
-      height: 206px;
-      margin-right: 0;
+      // width: 168px;
+      // height: 206px;
+      // margin-right: 0;
+      margin-bottom: 28px;
+    }
+  }
+
+
+  @include media.for-desktop{
+
+    &--small {
+      margin-bottom: 42px;
+    }
+
+    &--big {
+      margin-bottom: 46px;
     }
   }
 }
@@ -107,7 +154,8 @@
   padding: 11px 26px;
   // min-width: 100px;
 
-  @include media.for-tablet {
-    margin:0 37px 0 39px;
+  @include media.for-tablet_and_above {
+    margin-top: auto;
+    // margin: 33px 0 39px;
   }
 }

@@ -12,29 +12,23 @@
   @include media.for-tablet {
     font-size: 16px;
     min-width: 252px;
+    border-spacing: 0;
+    margin-bottom: 31px;
+  }
+  @include media.for-desktop {
+    font-size: 16px;
+    min-width: 180px;
+    border-spacing: 0;
+    margin-bottom: 33px;
   }
 }
 
 .card-item-table__column {
 
-  @include media.for-tablet  {
+  @include media.for-tablet_and_above  {
 
-    position: relative;
-    // padding-top: 7px;
-    // padding-bottom: 9px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      background-color: #cdcdcd;
-    }
   }
 }
-
 
 .card-item-table__name {
   margin: 0;
@@ -45,4 +39,13 @@
   text-align: end;
   margin: 0;
   padding: 0;
+}
+
+.card-item-table__cell{
+
+  @include media.for-tablet_and_above  {
+    border-bottom: 1px #cdcdcd solid;
+    padding-top: 7px;
+    padding-bottom: 8px;
+  }
 }

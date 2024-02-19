@@ -24,6 +24,7 @@
   }
 
   @include media.for-tablet  {
+
    height: 200px;
    flex-direction: row;
    margin: 69px 0 76px;
@@ -34,6 +35,18 @@
   }
 
   }
+
+  @include media.for-desktop  {
+    flex-direction: column;
+    margin: 0;
+
+
+    &::after {
+     background-image: url("../img/action-img-desktop.jpg");
+
+   }
+
+   }
 }
 
 .action__img{
@@ -44,6 +57,12 @@
   @include media.for-tablet  {
     margin-bottom: 0;
     margin-left: 77px;
+    width: 80px;
+    height: 82px;
+  }
+
+  @include media.for-desktop  {
+    margin-bottom: 46px;
     width: 80px;
     height: 82px;
   }

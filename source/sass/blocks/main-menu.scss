@@ -39,12 +39,19 @@
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
-    color: #fff;
     padding-top: 11px;
     padding-bottom: 7px;
 
-  &--current {
-    border-bottom: 2px solid #fff;
+    &--current {
+      border-bottom: 2px solid #68B738;
+    }
+
+    &--current-white {
+      border-bottom: 2px solid #fff;
+    }
+
+    &--white {
+      color: #fff;
     }
   }
 

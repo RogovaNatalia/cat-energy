@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 37px 25px 38px;
+  padding: 25px 0;
 
   @include media.for-mobile {
     position: relative;
@@ -27,8 +27,21 @@
     }
   }
 
-  @include media.for-tablet {
-    border: 2px solid #F2F2F2;
+  @include media.for-tablet_and_above {
+    position: relative;
+     padding: 123px 37px 38px;
+
+    &::before {
+      content: "";
+      display: block;
+      left: 0px;
+      right: 0px;
+      bottom: 0;
+      top: 71px;
+      border: 2px solid #F2F2F2;
+      position: absolute;
+      z-index: -1;
+    }
 
   }
 }
@@ -38,7 +51,6 @@
   width: 30px;
   height: 30px;
   margin-bottom: 23px;
-  margin-top: 52px;
 
   &::before {
     content: "";
@@ -67,6 +79,12 @@
     height: 60px;
     margin-bottom: 49px;
   }
+
+  @include media.for-desktop {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 61px;
+  }
 }
 
 .last-card__title {
@@ -80,7 +98,7 @@
   color: #111111;
   margin-bottom: 8px;
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
     font-size: 20px;
     line-height: 22px;
     text-align: center;
@@ -98,12 +116,13 @@
   line-height: 16px;
   color: #444;
   margin-bottom: 21px;
+  text-align: center;
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    margin-bottom: 87px;
+    margin-bottom:0;
     width: 165px;
   }
 }
@@ -113,7 +132,8 @@
   line-height: 20px;
   width: 100%;
 
-  @include media.for-tablet {
 
+  @include media.for-tablet_and_above {
+    margin-top: auto;
   }
 }

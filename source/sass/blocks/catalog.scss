@@ -23,6 +23,10 @@
   @include media.for-tablet {
     margin: 64px 0 68px;
   }
+
+  @include media.for-desktop {
+    margin: 75px 0 86px;
+  }
 }
 
 .catalog__title {
@@ -34,11 +38,13 @@
   @include media.for-tablet {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 82px;
+    margin-bottom: 91px;
   }
 
   @include media.for-desktop {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 85px;
+
   }
 }

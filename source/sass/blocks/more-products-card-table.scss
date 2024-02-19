@@ -27,6 +27,7 @@
 
   @include media.for-tablet  {
     text-align: end;
+    font-size: 16px;
   }
 
 }
@@ -43,6 +44,8 @@
   @include media.for-tablet  {
     width: 94px;
     padding: 0;
+    font-size: 16px;
+    line-height: 20px;
   }
 
 }
