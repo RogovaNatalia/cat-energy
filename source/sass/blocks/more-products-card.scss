@@ -23,6 +23,7 @@
   @include media.for-desktop  {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
   }
 }
 
@@ -43,7 +44,7 @@
 
     font-size: 20px;
     line-height: 20px;
-    margin: 25px 0 27px;
+    margin: 19px 0 25px;
   }
 
 }
@@ -53,7 +54,7 @@
   width: 100%;
   margin-bottom: 15px;
 
-  @include media.for-tablet  {
+  @include media.for-tablet_and_above  {
   margin-bottom: 0px;
   }
 
@@ -69,7 +70,7 @@
     grid-column: 1/-1;
   }
   @include media.for-desktop  {
-    margin: 15px 0 17px;
+    margin: 14px 0 17px;
   }
 
 }

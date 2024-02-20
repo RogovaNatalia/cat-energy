@@ -25,8 +25,12 @@
   line-height: 20px;
   color: #444;
 
-  @include media.for-tablet  {
+  @include media.for-tablet {
     text-align: end;
+    font-size: 16px;
+  }
+
+  @include media.for-desktop {
     font-size: 16px;
   }
 
@@ -41,7 +45,7 @@
   color: #444;
   text-align: end;
 
-  @include media.for-tablet  {
+  @include media.for-tablet_and_above  {
     width: 94px;
     padding: 0;
     font-size: 16px;
