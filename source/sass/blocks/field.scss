@@ -1,0 +1,35 @@
+.field {
+
+  &--right{
+    margin: 6px 0 6px 46px;
+    cursor: pointer;
+    position: relative;
+  }
+}
+.field--right + .field--right {
+  padding-top: 13px;
+}
+
+.field__label {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444;
+  margin-right: 13px;
+  white-space: nowrap;
+}
+
+.field__input {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 14px 17px 13px 15px;
+  border: 1px solid #E7E7E7;
+}

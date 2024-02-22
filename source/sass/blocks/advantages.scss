@@ -6,12 +6,12 @@
  margin-bottom: 49px;
 
  @include media.for-tablet {
-  border-bottom: 1px solid #E6E6E6;
-  margin-bottom: -1px;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: -1px;
   }
 
-@include media.for-desktop {
-  margin-bottom: 29px;
+  @include media.for-desktop {
+    margin-bottom: 29px;
   }
 }
 

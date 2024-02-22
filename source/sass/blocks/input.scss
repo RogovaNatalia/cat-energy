@@ -1,0 +1,25 @@
+.input{
+  display: block;
+  box-sizing: border-box;
+
+  &--icon{
+    background-repeat: no-repeat;
+    background-position: right 15px center,right center;
+    padding-right: 45px;
+  }
+
+  &--icon-email{
+    background-image: url("../img/email.svg");
+  }
+
+  &--icon-phone {
+    background-image: url("../img/phone.svg");
+  }
+
+  &--multiline{
+    width: 100%;
+    padding: 10px 12px 0 15px;
+    min-height: 150px;
+  }
+}
+
