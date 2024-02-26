@@ -18,6 +18,14 @@
   justify-content: center;
   align-items: center;
 
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
+
   @include media.for-mobile {
     background-image: url("../img/logo-mobile.svg");
     background-repeat: no-repeat;

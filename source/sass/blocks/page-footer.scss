@@ -40,6 +40,10 @@
 .page-footer__wrapper-logo__img{
   align-self: center;
 
+  &:active {
+    opacity: 0.6;
+  }
+
   @include media.for-tablet_and_above {
     width: 142px;
     height: 26px;

@@ -5,6 +5,7 @@
 // margin: 13px 0 0;
 
     border-top: 1px solid #cdcdcd;
+    padding-bottom: 19px;
 
     &:last-child {
       border-bottom: 1px solid #cdcdcd;
@@ -24,6 +25,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 40px;
+    padding-bottom: 0;
   }
 }
 

@@ -11,4 +11,18 @@
 
 .copyright__logo-text {
   align-self: center;
+
+  &:active{
+    opacity: 0.3;
+  }
 }
+.copyright__logo-text:focus + .copyright__logo path,
+.copyright__logo-text:hover + .copyright__logo path {
+  fill: #68B738;
+}
+
+.copyright__logo-text:active + .copyright__logo path {
+  fill: #68B738;
+  opacity: 0.3;
+}
+

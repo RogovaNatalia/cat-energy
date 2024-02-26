@@ -6,19 +6,37 @@
   margin-bottom: 32px;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    right: -20px;
-    top: -27px;
-    height: 1px;
-    background-color: #ebebeb;
+  @include media.for-mobile {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      top: -27px;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+  }
+
+  @include media.for-tablet {
+    margin: 65px 39px 72px 39px;
+  }
+
+  @include media.for-desktop {
+    margin-top: 74px;
+    margin-bottom: 82px;
   }
 }
+
 .form-main__title {
   @include title.title-medium();
   margin: 0;
+
+  @include media.for-tablet_and_above {
+    @include title.title-big();
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-main__text{
@@ -28,4 +46,10 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @include media.for-tablet_and_above {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 54px 0 66px;
+  }
 }

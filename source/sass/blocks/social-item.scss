@@ -1,0 +1,14 @@
+.social-item path{
+
+  &:hover,
+  &:focus{
+
+    fill: #68B738;
+  }
+
+  &:active{
+
+    fill: #68B738;
+    opacity: 0.3;
+  }
+}

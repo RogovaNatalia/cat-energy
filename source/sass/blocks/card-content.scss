@@ -200,6 +200,10 @@
   margin-top: 17px;
   margin-bottom: 22px;
 
+  &:active{
+    opacity: 0.3;
+  }
+
   @include media.for-tablet {
     font-weight: 400;
     font-size: 20px;

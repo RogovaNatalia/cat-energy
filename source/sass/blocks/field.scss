@@ -1,3 +1,5 @@
+@use "../global/media.scss";
+
 .field {
 
   &--right{
@@ -17,9 +19,13 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444;
+  color: #222;
   margin-right: 13px;
   white-space: nowrap;
+
+  @include media.for-tablet_and_above {
+    font-size: 20px;
+  }
 }
 
 .field__input {
@@ -32,4 +38,21 @@
   width: 100%;
   padding: 14px 17px 13px 15px;
   border: 1px solid #E7E7E7;
+
+  &:hover{
+    border: 2px solid #CDCDCD;
+  }
+
+  &:focus{
+    border: 2px solid #444;
+  }
+
+  &:focus:invalid{
+    border: 2px solid #FF8282;
+  }
+
+  @include media.for-tablet_and_above {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

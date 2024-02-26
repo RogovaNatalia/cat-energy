@@ -1,4 +1,5 @@
 @use "../mixins/title.scss";
+@use "../global/media.scss";
 
 .form__section {
 
@@ -10,6 +11,59 @@
   text-transform: none;
   margin: 0;
   margin-bottom: 35px;
+  background-color: #fff;
+  padding-right: 22px;
+  padding-left: 40px;
+  margin-left: -40px;
+  display: inline-block;
+  position: relative;
+
+  &--width {
+    margin-right: 76px;
+    top: 30%;
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 3px;
+    margin-top: 2px;
+    background: #68b738;
+    z-index: -1;
+    left: 20px;
+    box-sizing: inherit;
+  }
+
+  @include media.for-tablet_and_above {
+    @include title.title-medium();
+    margin-bottom: 76px;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 100vw;
+      height: 3px;
+      margin-top: 2px;
+      background: #68b738;
+      z-index: -1;
+    }
+
+    &::after{
+      top: 50%;
+    }
+
+    &--width {
+      margin-right: 0;
+    }
+  }
 }
 
 .form__fieldset {
@@ -17,22 +71,44 @@
   padding: 0;
   margin: 0;
   margin-bottom: 24px;
+  position: relative;
+
+  @include media.for-tablet_and_above {
+    margin-bottom: 65px;
+  }
 }
 
-.form__field {
-  // display: grid;
-  // grid-template-columns: auto auto;
-  // align-items: center;
+.form__fieldset--program {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  border: 1px solid #ededed;
 
+  @include media.for-tablet {
+    border: 1px #D9D9D9 solid;
+    padding-left: 27px;
+    margin-left: 0;
+    margin-right: 0px;
+    margin-bottom: 71px;
+  }
+}
+
+
+.form__field {
   display: flex;
   align-items: center;
   position:relative;
-  // justify-content: space-between;
-  // margin-bottom: 14px;
 }
 
 .form__field + .form__field {
   margin-top: 14px;
+
+  @include media.for-tablet {
+    margin-top: 20px;
+  }
 }
 
 .form__footer{
@@ -40,6 +116,11 @@
   grid-row: auto auto;
   row-gap: 21px;
   text-align: center;
+
+  @include media.for-tablet_and_above {
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
 }
 
 
@@ -48,7 +129,6 @@
     width: 100%;
     font-size: 16px;
     line-height: 18px;
-    border: none;
 }
 
 .form__footer-required{
@@ -59,4 +139,8 @@
   line-height: 16px;
   padding: 0;
   margin: 0;
+
+  @include media.for-tablet_and_above {
+    font-size: 16px;
+  }
 }

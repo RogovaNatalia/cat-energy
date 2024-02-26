@@ -84,9 +84,8 @@
 }
 
 .card-item__info {
-
-  @include media.for-tablet {
-
+  @include media.for-mobile {
+    width: 50%;
   }
 }
 
