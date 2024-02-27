@@ -41,14 +41,17 @@
 
   &:hover{
     border: 2px solid #CDCDCD;
+    padding: 13px 16px 12px 14px;
   }
 
   &:focus{
     border: 2px solid #444;
+    padding: 13px 16px 12px 14px;
   }
 
   &:focus:invalid{
     border: 2px solid #FF8282;
+    padding: 13px 16px 12px 14px;
   }
 
   @include media.for-tablet_and_above {
