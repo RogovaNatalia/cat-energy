@@ -13,22 +13,59 @@
 
   &--icon-email{
     background-image: url("../img/email.svg");
+
+    &:focus{
+      background-image: url("../img/email-focus.svg");
+    }
+
+    &:focus:invalid{
+      background-image: url("../img/email-focus_error.svg");
+    }
   }
 
   &--icon-phone {
     background-image: url("../img/phone.svg");
+
+    &:focus{
+      background-image: url("../img/phone-focus.svg");
+    }
+
+    &:focus:invalid{
+      background-image: url("../img/phone-focus_error.svg");
+    }
   }
 
   &--multiline{
     width: 100%;
-    padding: 14px 13px;
+    padding: 10px 13px;
     min-height: 150px;
+
+    &:hover{
+      border: 2px solid #CDCDCD;
+      padding: 9px 12px;
+      outline: none;
+    }
+
+    &:focus{
+      border: 2px solid #444;
+      padding: 9px 12px;
+      outline: none;
+    }
+
   }
 
-  @include media.for-tablet {
+  @include media.for-tablet_and_above {
     &--multiline{
       padding: 8px 17px;
       min-height: 173px;
+
+      &:hover{
+        padding: 7px 16px;
+      }
+
+      &:focus{
+        padding: 7px 16px;
+      }
     }
   }
 }

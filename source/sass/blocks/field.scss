@@ -6,10 +6,26 @@
     margin: 6px 0 6px 46px;
     cursor: pointer;
     position: relative;
-  }
-}
-.field--right + .field--right {
-  padding-top: 13px;
+
+    &:active {
+      opacity: 0.3;
+      }
+
+    &:hover .radio,
+    &:hover .checkbox{
+      border: 1px #BABABA solid;
+    }
+
+    @include media.for-tablet_and_above {
+      margin: 12px 0 12px 46px;
+      }
+    }
+
+    @include media.for-tablet_and_above{
+      &--right .field__label {
+      margin-left: 14px;
+      }
+    }
 }
 
 .field__label {
@@ -22,6 +38,7 @@
   color: #222;
   margin-right: 13px;
   white-space: nowrap;
+  position: relative;
 
   @include media.for-tablet_and_above {
     font-size: 20px;
@@ -36,26 +53,36 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 100%;
-  padding: 14px 17px 13px 15px;
+  padding: 14px 16px 11px 18px;
   border: 1px solid #E7E7E7;
 
   &:hover{
     border: 2px solid #CDCDCD;
-    padding: 13px 16px 12px 14px;
+    padding: 13px 15px 10px 17px;
+    outline: none;
   }
 
   &:focus{
     border: 2px solid #444;
-    padding: 13px 16px 12px 14px;
+    padding: 13px 15px 10px 17px;
+    outline: none;
   }
 
   &:focus:invalid{
     border: 2px solid #FF8282;
-    padding: 13px 16px 12px 14px;
+    padding: 13px 15px 10px 17px;
+    outline: none;
   }
 
   @include media.for-tablet_and_above {
+    padding: 9px 10px 10px 20px;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover,
+    &:focus,
+    &:focus:invalid{
+      padding: 8px 9px 9px 19px;
+      }
   }
 }

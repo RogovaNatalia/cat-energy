@@ -155,12 +155,12 @@
         <h1 class="form-main__title">Подбор программы</h1>
         <p class="form-main__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <section class="form__section">
+          <section class="form__section form__section--details">
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Укажите имя, вес и возраст вашего кота</legend>
               <div class="form__field field">
                 <label class="field__label" for="name">ИМЯ:*</label>
-                <input class="field__input" type="text" name="name" id="name" placeholder="барсик" required>
+                <input class="field__input" type="text"  name="name" id="name" placeholder="барсик" required>
               </div>
               <div class="form__field field">
                 <label class="field__label" for="weight">Вес (кг):*</label>
@@ -192,8 +192,8 @@
           </section>
 
           <section class="form__section">
-            <h2 class="form__section-title form__section-title--width">Контактные данные (владельца кота)</h2>
-            <fieldset class="form__fieldset">
+            <h2 class="form__section-title"><span class="form__section-title--border">Контактные данные (владельца кота)</span></h2>
+            <fieldset class="form__fieldset form__fieldset--contact">
               <legend class="visually-hidden">Введите ваши данные</legend>
               <div class="form__field field">
                 <label class="field__label" for="email">E-mail:*</label>
@@ -207,7 +207,7 @@
           </section>
 
           <section class="form__section">
-            <h2 class="form__section-title">Комментарий</h2>
+            <h2 class="form__section-title"><span class="form__section-title--border">Комментарий</span></h2>
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Комментарий</legend>
               <div class="form__field field">
@@ -218,8 +218,8 @@
           </section>
 
           <section class="form__section">
-            <h2 class="form__section-title">Дополнительно</h2>
-            <fieldset class="form__fieldset">
+            <h2 class="form__section-title"><span class="form__section-title--border">Дополнительно</span></h2>
+            <fieldset class="form__fieldset form__fieldset--extra">
               <legend class="visually-hidden">Дополнительно</legend>
                 <label class="form__field field field--right">
                   <input class="field__input visually-hidden" type="checkbox" checked>

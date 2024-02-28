@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!-- <symbol id="icon-close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+    <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+  </symbol>
+  <symbol id="icon-open" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+    <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+    <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+</symbol> -->
+
+<!-- <symbol id="icon-phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="icon-phone-focus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="#68B738" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol >
+
+<symbol id="icon-phone-focus-error" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="#FF8282" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol> -->
+
+<!-- <symbol id="icon-mail" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol> -->
+
+</svg>
