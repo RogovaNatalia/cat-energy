@@ -21,46 +21,4 @@
     width: 166px;
   }
 }
-// .copyright__logo:hover .copyright__logo-img path{
-//       fill:  #68B738;/* Ваш желаемый цвет изображения при наведении */
-//     }
-
-// .copyright__logo:active .copyright__logo-img path,
-// .copyright__logo:active .copyright__logo-text{
-//       fill:  #68B738;/* Ваш желаемый цвет изображения при активном состоянии */
-//       opacity: 0.3; /* Ваша желаемая непрозрачность при активном состоянии */
-
-  // @include media.for-tablet_and_above {
-  //    width: 168px;
-  // }
-
-
-
-
-
-// .copyright {
-//   display: flex;
-//   justify-content: space-between;
-
-//   @include media.for-tablet_and_above {
-//      width: 168px;
-//   }
-// }
-
-// .copyright__logo-text {
-//   align-self: center;
-
-//   &:active{
-//     opacity: 0.3;
-//   }
-// }
-// .copyright__logo-text:focus + .copyright__logo path,
-// .copyright__logo-text:hover + .copyright__logo path {
-//   fill: #68B738;
-// }
-
-// .copyright__logo-text:active + .copyright__logo path {
-//   fill: #68B738;
-//   opacity: 0.3;
-// }
 

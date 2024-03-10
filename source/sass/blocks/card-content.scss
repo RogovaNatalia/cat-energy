@@ -195,8 +195,10 @@
 }
 
 .card-content__link {
-  @include link.link-button();
   text-decoration: none;
+  display: flex;
+  align-items: center;
+
   margin-top: 17px;
   margin-bottom: 22px;
 
@@ -221,8 +223,25 @@
   }
 }
 
+.card-content__link-title{
+  @include link.link-button();
+  background-color: #f2f2f2;
+  margin: 0;
+
+  z-index: 1;
+
+  width: auto;
+  padding-right: 10px;
+}
+
+.card-content__link:hover
 .card-content__arrow {
-  margin-left: 13px;
+  transform: translateX(0);
+}
+
+.card-content__arrow {
+  width: 29px;
+  transform: translateX(-5px);
 
   @include media.for-tablet_and_above {
     margin-left: 22px;

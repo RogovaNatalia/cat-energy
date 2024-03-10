@@ -14,7 +14,7 @@
 
 .form__section-title {
   @include title.title();
-  line-height: 26px;
+  line-height: 31px;
   text-transform: none;
   margin: 0;
   display: block;
@@ -123,6 +123,7 @@
 
   @include media.for-desktop {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 84px;
   }
 }
 
@@ -148,6 +149,10 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     column-gap: 64px;
+  }
+
+  @include media.for-desktop{
+    column-gap: 84px;
   }
 }
 

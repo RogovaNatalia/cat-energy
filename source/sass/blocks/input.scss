@@ -7,8 +7,14 @@
 
   &--icon{
     background-repeat: no-repeat;
-    background-position: right 15px center,right center;
+    background-position: right 15px center;
     padding-right: 45px;
+  }
+
+  &:hover,
+  &:focus,
+  &:invalid {
+    background-position: right 14px center;
   }
 
   &--icon-email{
@@ -18,7 +24,7 @@
       background-image: url("../img/email-focus.svg");
     }
 
-    &:focus:invalid{
+    &:invalid{
       background-image: url("../img/email-focus_error.svg");
     }
   }
@@ -30,7 +36,7 @@
       background-image: url("../img/phone-focus.svg");
     }
 
-    &:focus:invalid{
+    &:invalid{
       background-image: url("../img/phone-focus_error.svg");
     }
   }

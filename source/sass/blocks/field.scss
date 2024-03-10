@@ -3,7 +3,7 @@
 .field {
 
   &--right{
-    margin: 6px 0 6px 46px;
+    padding: 6px 0 6px 46px;
     cursor: pointer;
     position: relative;
 
@@ -17,7 +17,7 @@
     }
 
     @include media.for-tablet_and_above {
-      margin: 12px 0 12px 46px;
+      padding: 12px 0 12px 46px;
       }
     }
 
@@ -62,13 +62,13 @@
     outline: none;
   }
 
-  &:focus{
+  &:focus {
     border: 2px solid #444;
     padding: 13px 15px 10px 17px;
     outline: none;
   }
 
-  &:focus:invalid{
+  &:invalid {
     border: 2px solid #FF8282;
     padding: 13px 15px 10px 17px;
     outline: none;
@@ -81,8 +81,8 @@
 
     &:hover,
     &:focus,
-    &:focus:invalid{
+    &:invalid{
       padding: 8px 9px 9px 19px;
-      }
+    }
   }
 }
